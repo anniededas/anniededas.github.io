@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+	<div class="image"></div>
+	<style type="text/css">
+		body {
+	  		margin: 0 auto;
+	  		max-width: 56em;
+	  		padding: 1em 0;
+	  		background-color: #ffe6b3;
+		}
+
+		.grid {
+	  		display: grid;
+	  		grid-template-columns: auto;
+	  		justify-content: space-around;
+		}
+
+		.image {
+	  		background-image: url("background.jpeg");
+	  		background-size: cover;
+	  		opacity: 0.5;
+		}
+
+		.module {
+	  		display: inline-grid;
+	  		align-items: center;
+	  		justify-content: center;
+	  		height: 416px;
+	  		width: 486px;
+	  		margin-left: 5px;
+	  		margin-right: 5px;
+	  		flex: 1 1 200px;
+	  		border-style: double;
+	  		border-color: #86592d;
+	  		border-width: 5px;
+	  		padding: 20px;
+	  		top: 1;
+	  		left: 1;
+		}
+
+		@font-face {
+  			font-family: heading;
+  			src: url(BLKCHCRY.TTF);
+		}
+
+		div {
+  			font-family: heading;
+		}
+
+		h1 {
+			font-family: heading;
+			text-align: center;
+			font-weight: 900;
+			font-size: xx-large;
+
+		}
+
+		.module .changing-image {
+			position: relative;
+			display: inline-block;
+			display: none;
+			position: absolute;
+			top: 1;
+			left: 1;
+			z-index: 99;
+			border-style: double;
+	  		border-color: #86592d;
+	  		border-width: 5px;
+	  		padding: 20px;
+	  		justify-content: center;
+	  		align-items: center;
+	  		margin-left: 5px;
+	  		margin-right: 5px;
+	  		flex: 1 1 200px;
+	  		height: 522px;
+	  		width: 386px;
+		}
+
+		.module:hover .changing-image{
+			display: inline-grid;
+		}
+	</style>
+	<h1>Week 06: NET ART</h1>
+	<div class='grid'>
+		<div class="module">
+			<img src='earringgirl.jpeg'>
+			<img src='snoop.jpeg' class='changing-image'>
+		</div>
+	</div>
+</body>
