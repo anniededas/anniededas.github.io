@@ -1,0 +1,57 @@
+@font-face{
+	font-family: code;
+	src: url(SourceCodePro-Medium.ttf);
+}
+
+@font-face{
+	font-family: computer;
+	src: url(1968odyssey.ttf);
+}
+
+body{
+	background-color: #808080;
+	background-image: url('tumblr_09bd7344f59c4935a6dcf7c7c0d62bd0_33e769d7_500.gif');
+	font-family: code;
+
+}
+
+h1 {
+	font-family: computer;
+	text-align: center;
+	width: 100%;
+}
+
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #404040; 
+	color: white;
+	text-align: center;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-around;
+	align-content: space-around;
+	grid-gap: 10px;
+	padding: 10px;
+}
+
+a:link{
+	color: white;
+}
+a:visited{
+	color: white;
+}
+
+.header {
+  position: fixed;
+  text-align: center;
+  background: #404040;
+  color: white;
+  font-size: 30px;
+  width: 100%;
+}
