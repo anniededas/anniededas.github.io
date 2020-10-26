@@ -5,14 +5,13 @@
 
 @font-face{
 	font-family: computer;
-	src: url(1968odyssey.ttf);
+	src: url('Neo-Writer.ttf');
 }
 
 body{
 	background-color: #808080;
-	background-image: url('tumblr_09bd7344f59c4935a6dcf7c7c0d62bd0_33e769d7_500.gif');
+	background-image: url('tenor.gif');
 	font-family: code;
-
 }
 
 h1 {
@@ -54,4 +53,37 @@ a:visited{
   color: white;
   font-size: 30px;
   width: 100%;
+}
+
+.navbar {
+	background-color: #595959;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 50px;
+	justify-content: space-between;
+}
+
+.navbar a {
+	float: left;
+	display: flex;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 15px;
+	justify-content: space-between;
+	padding: 0.25rem 0.5rem;
+}
+
+.navbar a:hover {
+	background-color: #999966;
+	color: white;
+}
+
+.navbar a.active {
+	background-color: #5c5c3d;
+	color: white;
 }
